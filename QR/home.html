@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  
+<div class="container">
+
+  
+<form method="get" id="final-data">
+
+  <fieldset>
+    <legend>QR Code Generation Form</legend>
+  <h3>Enter The Details</h3>
+  
+  <label for="username">UserName: </label>
+  <input type="text" name="username" id="name" required><br><br>
+
+  <label for="age">Age: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="number" name="age" id="Age" required><br><br>
+
+  <label for="skill">Skills: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="text" name="skill" id="skills" required><br><br>
+
+  <label for="exp">Experience: </label>
+  <input type="text" name="exp" id="Exp" required><br><br>
+
+  <input id="btn" type="submit" value="submit" onclick="showQRCode(event), clearText()">
+</fieldset>
+</form>
+
+</div>
+
+<!-- <div id="content"></div> -->
+<div id="qr-code">
+  <h3>QR Code</h3>
+</div>  
+
+<script src="details.js"></script>
+</body>
+</html>
+

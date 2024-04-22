@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+	</script>
+</head>
+
+<body>
+  <h2>QR Code</h2>
+  <div id="content"></div>
+
+  <script>
+
+    const data = window.location.search;
+
+    const  params = new URLSearchParams(data);
+
+    console.log(params.get("username"));
+    console.log(params.get("age"));
+    console.log(params.get("skill"));
+
+    const name = params.get("username");
+    const age = params.get("age");
+    const skill = params.get("skill");
+
+    const getData = "Name: "+ name + "<br>"
+    + "Age: " + age + "<br>"
+    + "Skill: " + skill;
+
+    const getData2 = "Name: "+ name +" "+ "Age: " + age + " " + "Skill: " + skill;
+
+    const getData3 =  name +" "+ age +" "+ skill;
+          
+   // document.getElementById("content").innerHTML = getData;
+
+   
+
+  let qrcode = new QRCode("content",getData2);   
+    
+  </script>
+</body>
+</html> -->
+
+
